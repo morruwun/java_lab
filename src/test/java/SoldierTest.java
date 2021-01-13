@@ -16,13 +16,13 @@ public class SoldierTest {
 
     @Test
     public void AmountOfFoodDecreasesByAmountOfSoldiersAfterEating() {
-        Soldier soldier = new Soldier(200, SoldierType.KNIGHT);
+        Soldier soldier = new Soldier(200, SoldierType.KNIGHT.toString());
         assertEquals(food - soldier.getAmount(), soldier.eat(food));
     }
 
     @Test
     public void AmountOfSoldiersAndWeaponDecreaseWhenDefencing() {
-        Soldier soldier = new Soldier(200, SoldierType.KNIGHT);
+        Soldier soldier = new Soldier(200, SoldierType.KNIGHT.toString());
         Weapon soldierWep = new Weapon(200, WeaponType.SWORD);
         soldier.setWeapon(soldierWep);
         soldier.defence();

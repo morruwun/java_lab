@@ -4,7 +4,7 @@ import defence.Weapon;
 
 public class Soldier implements Human{
     private int amount;
-    private SoldierType soldierType;
+    private String soldierType;
     private Weapon weapon;
 
     public Weapon getWeapon() {
@@ -13,14 +13,15 @@ public class Soldier implements Human{
     public int getAmount() {
         return amount;
     }
+    public String getSoldierType() {return soldierType;}
 
     public void setWeapon(Weapon weapon) {
         this.weapon = weapon;
     }
 
-    public Soldier(int amount, SoldierType sType) {
+    public Soldier(int amount, String soldierType) {
         this.amount = amount;
-        soldierType = sType;
+        this.soldierType = soldierType;
     }
 
     public void showHuman() {

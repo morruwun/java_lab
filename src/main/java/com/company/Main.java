@@ -25,7 +25,7 @@ public class Main {
 
         Government lord1 = new Government(50, "Lord ", "Brown", GovernType.LORD.toString());
         Government lord2 = new Government(50, "Lord ", "Brown", GovernType.LORD.toString());
-        lord1.getName();
+        lord1.getName1();
         lord1.showHuman();
         Servant maid1 = new Servant(40, "Annie White", ServantType.MAID);
         Servant maid2 = new Servant(40, "Annie White", ServantType.MAID);
@@ -35,7 +35,7 @@ public class Main {
             System.out.println(name);
         }
 
-        Soldier knight = new Soldier(200, SoldierType.KNIGHT);
+        Soldier knight = new Soldier(200, SoldierType.KNIGHT.toString());
         Weapon knightwep = new Weapon(200, WeaponType.SWORD);
         knight.setWeapon(knightwep);
 

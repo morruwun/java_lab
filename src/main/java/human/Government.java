@@ -1,10 +1,13 @@
 package human;
 
-public class Government implements Human{
+import java.util.List;
+
+public class Government implements Human {
     private int age;
     private String name;
     private String surname;
     private String governType;
+    private List<String> personalTraits;
 
     public Government(int age, String name, String surname, String governType) {
         this.age = age;
@@ -15,6 +18,7 @@ public class Government implements Human{
     public int getAge() {
         return age;
     }
+    public List<String> getPersTraits() { return personalTraits; }
 
     @Override
     public boolean equals(Object obj) {
@@ -40,8 +44,10 @@ public class Government implements Human{
 
         return true;
     }
+    public String getName() {return name;}
+    public String getSurname() {return surname;}
 
-    public StringBuffer getName() {
+    public StringBuffer getName1() {
         StringBuffer sb = new StringBuffer();
         sb.append(name);
         sb.append(surname);
